@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalabel=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>ID.IM</title>
+<link href="../../assets/css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../assets/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../assets/js/default.js"></script>
+<script type="text/javascript">
+	document.documentElement.addEventListener('touchstart', function (event) { if (event.touches.length > 1) { event.preventDefault();}}, false);	
+</script>
+</head>
+<body>
+<div id="wrap" class="wrap">
+	<div class="container">
+		<!-- header -->
+		<header class="header">
+			<h1 class="title brand">휴면회원 안내</h1>
+			<a href="#a" class="btn btn_back">이전으로</a>
+		</header>
+		<!-- // header -->
+	
+		<!-- contents -->
+		<div class="contents" style="background:rgba(245,245,245,0.7);">
+			<h2 class="hide">휴면 상태 안내</h2>
+			<div class="login_wrap">
+				<p class="txt large"><strong class="name">#홍길동님,</strong><br>계정이 휴면 상태로 전환되었어요.</p>
+				<p class="txt medium">1년 동안 로그인하지 않아 휴면 상태로<br>전환되었습니다. 휴면해지 신청 시 로그인 <br>서비스 사용이 가능합니다.</p>
+				
+				<div class="pos_bottom_layer">
+					<div class="expiry_date">
+						<h2>개인정보 유효기간 선택</h2>
+						<div class="radio">
+							<input type="radio" id="rad_exp01_1" name="rad_exp01" checked>
+							<label for="rad_exp01_1">1년</label>
+						</div>
+						<div class="radio">
+							<input type="radio" id="rad_exp01_2" name="rad_exp01">
+							<label for="rad_exp01_2">회원탈퇴 시</label>
+						</div>
+					</div>
+					<div class="btn_area">
+						<button type="button" class="btn primary btn_purple">휴면 상태 해제 요청</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // contents -->
+
+	</div>
+</div>
+</body>
+</html>

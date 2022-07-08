@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalabel=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>ID.IM</title>
+<link href="../../assets/css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../assets/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../assets/js/default.js"></script>
+<script type="text/javascript">
+	document.documentElement.addEventListener('touchstart', function (event) { if (event.touches.length > 1) { event.preventDefault();}}, false);	
+</script>
+</head>
+<body>
+<div id="wrap" class="wrap">
+	<div class="container">
+		<!-- header -->
+		<header class="header">
+			<h1 class="title brand">비밀번호 등록</h1>
+			<a href="#a" class="btn btn_back">이전으로</a>
+		</header>
+		<!-- // header -->
+	
+		<!-- contents -->
+		<div class="contents">
+			<h2 class="hide">비밀번호 등록</h2>
+			<div class="login_wrap">
+				<p class="txt large"><strong>등록된 비밀번호가 없어요.</strong><br>사용하실 비밀번호를 입력해주세요.</p>
+				
+				<div class="basic_ip">
+					<div class="row">
+						<input type="password" placeholder="비밀번호" value="123123">
+						<div class="btn_area">
+							<button type="button" class="btn btn_show_pw active">비밀번호보기</button>
+							<button type="button" class="btn btn_delete active">삭제</button>
+						</div>
+						<p class="guide">영문, 숫자, 특수문자 조합 8~20자</p>
+						<p class="error_txt">에러문구123123</p>
+					</div>
+					<div class="row">
+						<input type="password" placeholder="비밀번호 확인">
+						<div class="btn_area">
+							<button type="button" class="btn btn_show_pw">비밀번호보기</button>
+							<button type="button" class="btn btn_delete">삭제</button>
+						</div>
+						<p class="error_txt">에러문구123123</p>
+					</div>
+				</div>
+				<div class="pos_bottom_layer">
+					<div class="btn_area">
+						<button type="button" class="btn primary btn_purple">비밀번호 등록</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // contents -->
+
+	</div>
+</div>
+</body>
+</html>

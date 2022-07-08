@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalabel=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>ID.IM</title>
+<link href="../../assets/css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../assets/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../assets/js/default.js"></script>
+<script type="text/javascript">
+	document.documentElement.addEventListener('touchstart', function (event) { if (event.touches.length > 1) { event.preventDefault();}}, false);	
+</script>
+</head>
+<body>
+<div id="wrap" class="wrap">
+	<div class="container">
+		<!-- header -->
+		<header class="header">
+			<h1 class="title brand">이메일 찾기</h1>
+			<a href="#a" class="btn btn_back">이전으로</a>
+		</header>
+		<!-- // header -->
+	
+		<!-- contents -->
+		<div class="contents">
+			<h2 class="hide">본인인증</h2>
+			<div class="login_wrap">
+				<p class="txt large">이메일을 찾기 위해<br><strong>본인인증이 필요해요.</strong></p>
+				<div class="basic_ip">
+					<div class="row error">
+						<input type="text" placeholder="이름">
+						<div class="btn_area">
+							<button type="button" class="btn btn_delete">삭제</button>
+						</div>
+						<p class="error_txt">에러에러</p>
+					</div>
+					<div class="row birth">
+						<div class="col">
+							<input type="tel" placeholder="생년월일 6자리">
+							<div class="btn_area">
+								<button type="button" class="btn btn_delete">삭제</button>
+							</div>
+						</div>
+						<div class="col clip">-</div>
+						<div class="col">
+							<input type="tel" placeholder="1******">
+							<div class="btn_area">
+								<button type="button" class="btn btn_delete">삭제</button>
+							</div>
+						</div>
+						<p class="error_txt">에러문구</p>
+					</div>
+					<div class="row">
+						<ul class="carrier_wrap">
+						<li class="active"><button type="button">SKT</button></li>
+						<li><button type="button">KT</button></li>
+						<li><button type="button">LGU+</button></li>
+						<li><button type="button">SKT알뜰폰</button></li>
+						<li><button type="button">KT알뜰폰</button></li>
+						<li><button type="button">LGU+알뜰폰</button></li>
+						</ul>
+					</div>
+					<div class="row">
+						<input type="tel" placeholder="휴대폰 번호(‘-’없이 숫자만 입력)">
+						<div class="btn_area">
+							<button type="button" class="btn btn_delete">삭제</button>
+						</div>
+						<p class="error_txt">에러에러</p>
+					</div>
+				</div>
+				
+				<div class="pos_bottom_layer fixed">
+					<button type="button" class="btn primary large btn_purple">다음</button>
+				</div>
+			</div>
+		</div>
+		<!-- // contents -->
+
+	</div>
+</div>
+</body>
+</html>

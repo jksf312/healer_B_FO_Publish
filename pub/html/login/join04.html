@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalabel=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>ID.IM</title>
+<link href="../../assets/css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../assets/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../assets/js/default.js"></script>
+<script type="text/javascript">
+	document.documentElement.addEventListener('touchstart', function (event) { if (event.touches.length > 1) { event.preventDefault();}}, false);	
+</script>
+</head>
+<body>
+<div id="wrap" class="wrap">
+	<div class="container">
+		<!-- header -->
+		<header class="header">
+			<h1 class="title brand">회원가입</h1>
+			<a href="#a" class="btn btn_back">이전으로</a>
+		</header>
+		<!-- // header -->
+	
+		<!-- contents -->
+		<div class="contents">
+			<h2 class="hide">약관 동의</h2>
+			<div class="login_wrap">
+				<p class="txt large" style="padding-bottom:0.75rem;">마지막으로<br><strong>약관 동의가 필요해요.</strong></p>
+				
+				<ul class="select_wrap">
+				<li>
+					<div class="checkbox all">
+						<input type="checkbox" id="chk01_all">
+						<label for="chk01_all">약관 전체 동의</label>
+					</div>
+				</li>
+				<li>
+					<div class="checkbox">
+						<input type="checkbox" id="chk01_1" checked>
+						<label for="chk01_1">[필수] 서비스 이용약관</label>
+						<button type="button" class="btn btn_detail">자세히보기</button>
+					</div>
+				</li>
+				<li>
+					<div class="checkbox">
+						<input type="checkbox" id="chk01_2">
+						<label for="chk01_2">[필수] 개인정보 수집 및 이용 동의</label>
+						<button type="button" class="btn btn_detail">자세히보기</button>
+					</div>
+				</li>
+				<li>
+					<div class="checkbox">
+						<input type="checkbox" id="chk01_3">
+						<label for="chk01_3">[필수] 전자금융거래 이용약관 동의</label>
+						<button type="button" class="btn btn_detail">자세히보기</button>
+					</div>
+				</li>
+				<li>
+					<div class="checkbox">
+						<input type="checkbox" id="chk01_4">
+						<label for="chk01_4">[필수] 개인정보 제3자 제공 동의</label>
+						<button type="button" class="btn btn_detail">자세히보기</button>
+					</div>
+				</li>
+				<li>
+					<div class="checkbox">
+						<input type="checkbox" id="chk01_5">
+						<label for="chk01_5">[필수] 개인정보 유효기간 선택</label>
+						<button type="button" class="btn btn_detail">자세히보기</button>
+					</div>
+					<div class="sub">
+						<div class="radio">
+							<input type="radio" id="rad01_1" name="rad01">
+							<label for="rad01_1">1년</label>
+						</div>
+						<div class="radio">
+							<input type="radio" id="rad01_2" name="rad01">
+							<label for="rad01_2">회원탈퇴 시</label>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="checkbox">
+						<input type="checkbox" id="chk01_6">
+						<label for="chk01_6">[선택] 마케팅 정보 수신동의</label>
+						<button type="button" class="btn btn_detail">자세히보기</button>
+					</div>
+					<div class="sub">
+						<div class="checkbox type_nb">
+							<input type="checkbox" id="chk_sub01_1">
+							<label for="chk_sub01_1">SMS</label>
+						</div>
+						<div class="checkbox type_nb">
+							<input type="checkbox" id="chk_sub01_2">
+							<label for="chk_sub01_2">이메일</label>
+						</div>
+					</div>
+				</li>
+				</ul>
+				
+				<div class="pos_bottom_layer fixed">
+					<button type="button" class="btn primary large btn_purple">다음</button>
+				</div>
+			</div>
+		</div>
+		<!-- // contents -->
+
+	</div>
+</div>
+</body>
+</html>
