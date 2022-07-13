@@ -15,7 +15,9 @@ function ly_sett(){
 };
 
 function popup_event(){
-	
+	$('.popup .pop_close').click(function(){
+		$(this).parents('.popup').removeClass('active');
+	});
 };
 
 function tabs(){

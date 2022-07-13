@@ -25,7 +25,7 @@ html,body,h1,h2,h3,h4,h5,h6,div,p,blockquote,pre,code,address,ul,ol,li,menu,nav,
 dl,dt,dd,table,thead,tbody,tfoot,label,caption,th,td,form,fieldset,legend,hr,input,button,textarea,object,figure,figcaption {margin:0;padding:0;}
 html, body{ width:100%;}
 html{-webkit-touch-callout:none; -webkit-user-select:none; -webkit-tap-highlight-color:rgba(0, 0, 0, 0); overflow:visible !important; position: relative; min-height: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; -webkit-overflow-scrolling:touch; font-size:20px;}
-body{ width:100%; min-width:280px; -webkit-text-size-adjust:none;word-wrap:break-word;word-break:break-all; -webkit-overflow-scrolling:touch;
+body{ width:100%; min-width:280px; -webkit-text-size-adjust:none;word-wrap:break-word;word-break:keep-all; -webkit-overflow-scrolling:touch;
 	transition:.3s;
 	-webkit-transition:.3s;
 }
@@ -142,7 +142,7 @@ ul::-webkit-scrollbar-track {
 
 /* checkbox */
 .checkbox { display:inline-block;}
-.checkbox label { display:inline-block; padding-left:2rem; background:no-repeat left center / 1rem auto; background-image:url(../images/ico/ico_chk.png); line-height:1rem; font-size:0.7rem;}
+.checkbox label { display:inline-block; padding-left:2rem; background:no-repeat left top / 1rem auto; background-image:url(../images/ico/ico_chk.png); line-height:1rem; font-size:0.7rem;}
 .checkbox :checked + label { background-image:url(../images/ico/ico_chk_on.png);}
 .checkbox :disabled + label { background-image:url(../images/ico/ico_chk_dis.png) !important;}
 
@@ -165,6 +165,13 @@ ul::-webkit-scrollbar-track {
 .primary:disabled { background:rgba(169,169,179,0.5) !important;}
 .primary.btn_black { background:#111; color:#fff;}
 .primary.btn_black:disabled { background:#ecedf1 !important; color:#a9a9b3;}
+.primary.btn_white { background:#fff; color:#5143d4;}
+.primary.btn_white:active { color:#463ab8;}
+.primary.btn_white:disabled { background:#ecedf1 !important; color:#a9a9b3;}
+.primary.btn_gray { background:#a9a9b3; color:#fff;}
+.primary.btn_gray:active { background:#91919a;}
+.primary.btn_gray:disabled { background:rgba(169, 169, 179, 0.5) !important;}
+
 .secondary.btn_purple { border-color:#5143d4; color:#5143d4;}
 .secondary.btn_purple:active { border-color:#463ab8; color:#463ab8;}
 
@@ -172,6 +179,7 @@ ul::-webkit-scrollbar-track {
 .btn.btn_show_pw { width:1.1rem; height:1.1rem; background-image:url(../images/ico/ico_eye.png); background-size:100% auto;}
 .btn.btn_detail { width:1rem; height:1rem; background:no-repeat right center / 0.4rem auto; background-image:url(../images/ico/ico_arrow2.png);}
 .btn.btn_detail:active { background-image:url(../images/ico/ico_arrow2_on.png);}
+.btn.btn_close { position:absolute; right:1rem; top:1rem; width:1rem; height:1rem; background:url(../images/ico/ico_close.png) no-repeat center / 100% auto;}
 
 /* input */
 
@@ -233,8 +241,41 @@ ul::-webkit-scrollbar-track {
 
 
 /* Popup */
-.popup { display:none; position:fixed; z-index:999;}
+.popup { display:none; position:fixed; z-index:999; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.7);}
 .popup.active { display:block;}
+.popup .pop_container { overflow:hidden; position:absolute; background:#fff;}
+.popup .pop_header { position:relative; padding:0.9rem 2.5rem 0.9rem 1rem; line-height:1.2rem;}
+.popup .pop_header:after { content:""; position:absolute; left:0; bottom:0; width:100%; height:1px; background:#f5f5f5;}
+.popup .pop_header .pop_tit { line-height:1.2rem; font-size:0.9rem; font-weight:500;}
+.popup .pop_content { padding:1.5rem 1rem 1.2rem;}
+.popup .pop_btn { display:flex; border-top:1px solid #ecedf1;}
+.popup .pop_btn .btn { flex:1;}
+.pop_alert .pop_container { left:50%; top:50%; width:77.7%; max-width:640px; border-radius:0.9rem; transform:translate(-50%,-50%); -webkit-transform:translate(-50%,-50%);}
+.pop_alert .pop_content { text-align:center;}
+.pop_alert .pop_content .pop_tit { padding:3.5rem 0 0.5rem; background:no-repeat center top / auto 2.5rem; font-size:0.9rem; font-weight:bold;}
+.pop_alert .pop_content .pop_tit.type01 { background-image:url(../images/ico/ico_pop_check.png);}
+.pop_alert .pop_content .pop_tit.type02 { background-image:url(../images/ico/ico_pop_clock.png);}
+.pop_alert .pop_content .pop_tit.type03 { background-image:url(../images/ico/ico_pop_warning.png);}
+.pop_alert .pop_content .pop_message { line-height:1.4; font-size:0.7rem; color:#333;}
+
+.pop_btm_sheet .pop_container { left:0; bottom:0; width:100%; border-top-left-radius:0.5rem; border-top-right-radius:0.5rem;}
+.pop_btm_sheet .pop_content { padding:1.25rem 1rem 1.4rem;}
+.pop_btm_sheet .pop_content .pop_message { padding:5.25rem 0 0.6rem; background:no-repeat center 0.75rem / auto 2.5rem; text-align:center; font-size:0.9rem;}
+.pop_btm_sheet .pop_content .pop_message.type01 { background-image:url(../images/ico/ico_pop_check.png);}
+.pop_btm_sheet .pop_content .pop_message.type02 { background-image:url(../images/ico/ico_pop_clock.png);}
+.pop_btm_sheet .pop_content .pop_message.type03 { background-image:url(../images/ico/ico_pop_warning.png);}
+
+.pop_full_sheet .pop_container { left:0; top:0; width:100%; height:100%;}
+.pop_full_sheet .pop_content { overflow:auto; padding:1rem; height:calc(100vh - 6rem);}
+.pop_full_sheet .pop_content .terms_area { padding:0.5rem;}
+.pop_full_sheet .pop_content .terms_area .tit { font-size:0.8rem; font-weight:bold;}
+.pop_full_sheet .pop_content .terms_list { padding-top:1rem;}
+.pop_full_sheet .pop_content .terms_list li { position:relative; padding-left:0.5rem; line-height:1rem; font-size:0.7rem; color:#999;}
+.pop_full_sheet .pop_content .terms_list li:after { content:""; position:absolute; left:0; top:0.45rem; width:0.1rem; height:0.1rem; background:#999;}
+
+.pop_toast .pop_container { left:50%; bottom:1rem; width:88.8%; border-radius:0.45rem; background:rgba(79, 88, 103, 0.9); text-align:center; transform:translate(-50%, 0); -webkit-transform:translate(-50%, 0);}
+.pop_toast .pop_content { padding:0.9rem 1rem;}
+.pop_toast .pop_content .pop_message { font-size:0.8rem; color:#fff;}
 
 /* Responsive */
 @media screen and (min-width:480px){

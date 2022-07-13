@@ -11,53 +11,159 @@
 <script type="text/javascript">
 	document.documentElement.addEventListener('touchstart', function (event) { if (event.touches.length > 1) { event.preventDefault();}}, false);	
 </script>
+<style>
+	.contents .btn { margin:10px;}	
+</style>
 </head>
 <body>
 <div id="wrap" class="wrap">
 	<div class="container">
 		<!-- header -->
 		<header class="header">
-			<h1 class="title brand">비밀번호 변경안내</h1>
+			<h1 class="title brand">팝업 모음</h1>
 			<a href="#a" class="btn btn_back">이전으로</a>
 		</header>
 		<!-- // header -->
 	
 		<!-- contents -->
 		<div class="contents">
-			<h2 class="hide">비밀번호 변경</h2>
-			<div class="login_wrap">
-				<p class="txt large"><strong class="name">#홍길동님,</strong><br><strong>최근 90일 동안</strong> 같은<br>비밀번호를 사용하고<br>계세요.</p>
-				<p class="txt medium">소중한 개인정보 보호를 위해 주기적으로<br>비밀번호를 변경해주세요.</p>
-				
-				<div class="basic_ip">
-					<div class="row">
-						<input type="password" placeholder="비밀번호">
-						<div class="btn_area">
-							<button type="button" class="btn btn_show_pw">비밀번호보기</button>
-							<button type="button" class="btn btn_delete">삭제</button>
-						</div>
-						<p class="guide">영문, 숫자, 특수문자 조합 8~20자</p>
-						<p class="error_txt">에러문구123123</p>
-					</div>
-					<div class="row">
-						<input type="password" placeholder="비밀번호 확인">
-						<div class="btn_area">
-							<button type="button" class="btn btn_show_pw">비밀번호보기</button>
-							<button type="button" class="btn btn_delete">삭제</button>
-						</div>
-						<p class="error_txt">에러문구123123</p>
-					</div>
+			<button type="button" class="btn primary small02 btn_black" onclick="$('#exam01').addClass('active');">기본 Alert 팝업</button>
+			<button type="button" class="btn primary small02 btn_black" onclick="$('#exam02').addClass('active');">하단 고정 팝업(안내)</button>
+			<button type="button" class="btn primary small02 btn_black" onclick="$('#exam03').addClass('active');">하단 고정 팝업(재요청)</button>
+			<button type="button" class="btn primary small02 btn_black" onclick="$('#exam04').addClass('active');">하단 고정 팝업(약관동의)</button>
+			<button type="button" class="btn primary small02 btn_black" onclick="$('#exam05').addClass('active');">전체화면 팝업</button>
+			<button type="button" class="btn primary small02 btn_black" onclick="$('#exam06').addClass('active');">토스트 팝업</button>
+		</div>
+		<!-- // contents -->
+		
+		<!-- Popup : Alert -->
+		<div id="exam01" class="popup pop_alert">
+			<div class="pop_container">
+				<div class="pop_content">
+					<!-- type01 ~ 03 -->
+					<h2 class="pop_tit type01">휴면 상태 해지 완료</h2>
+					<p class="pop_message">휴면 상태 해지가 성공적으로 <br>완료되었어요.</p>
 				</div>
-				<div class="pos_bottom_layer">
-					<div class="btn_area">
-						<button type="button" class="btn primary btn_purple">비밀번호 변경</button>
-						<button type="button" class="btn secondary btn_purple">60일 후에 변경하기</button>
-					</div>
+				<div class="pop_btn">
+					<button type="button" class="btn primary btn_white pop_close">확인</button>
 				</div>
 			</div>
 		</div>
-		<!-- // contents -->
-
+		<!-- // Popup : Alert -->
+		
+		<!-- Popup : 하단 고정 팝업(안내) -->
+		<div id="exam02" class="popup pop_btm_sheet">
+			<div class="pop_container">
+				<div class="pop_content">
+					<!-- type01 ~ 03 -->
+					<p class="pop_message type03">인증번호가 일치하지 않아요.</p>
+				</div>
+				<div class="pop_btn">
+					<button type="button" class="btn primary large btn_purple pop_close">확인</button>
+				</div>
+			</div>
+		</div>
+		<!-- // Popup : 하단 고정 팝업(안내) -->
+		
+		<!-- Popup : 하단 고정 팝업(재요청) -->
+		<div id="exam03" class="popup pop_btm_sheet">
+			<div class="pop_container">
+				<div class="pop_content">
+					<!-- type01 ~ 03 -->
+					<p class="pop_message type03">인증번호 재발송 3회를 초과했습니다.<br>1분 뒤에 다시 시도해주세요.</p>
+				</div>
+				<div class="pop_btn">
+					<button type="button" class="btn primary large btn_gray pop_close">닫기</button>
+					<button type="button" class="btn primary large btn_purple">인증번호 재요청</button>
+				</div>
+			</div>
+		</div>
+		<!-- // Popup : 하단 고정 팝업(재요청) -->
+		
+		<!-- Popup : 하단 고정 팝업(약관동의) -->
+		<div id="exam04" class="popup pop_btm_sheet">
+			<div class="pop_container">
+				<div class="pop_content">
+					<ul class="select_wrap">
+					<li>
+						<div class="checkbox all">
+							<input type="checkbox" id="chk01_all">
+							<label for="chk01_all">약관 전체 동의</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox">
+							<input type="checkbox" id="chk01_1" checked="">
+							<label for="chk01_1">[필수] 서비스 이용약관</label>
+							<button type="button" class="btn btn_detail">자세히보기</button>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox">
+							<input type="checkbox" id="chk01_2">
+							<label for="chk01_2">[필수] 개인정보 수집 및 이용 동의</label>
+							<button type="button" class="btn btn_detail">자세히보기</button>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox">
+							<input type="checkbox" id="chk01_3">
+							<label for="chk01_3">[필수] 고유식별정보 처리 동의</label>
+							<button type="button" class="btn btn_detail">자세히보기</button>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox">
+							<input type="checkbox" id="chk01_4">
+							<label for="chk01_4">[필수] 통신사이용약관 동의</label>
+							<button type="button" class="btn btn_detail">자세히보기</button>
+						</div>
+					</li>
+					</ul>
+				</div>
+				<div class="pop_btn">
+					<button type="button" class="btn primary large btn_purple pop_close" disabled>다음</button>
+				</div>
+			</div>
+		</div>
+		<!-- // Popup : 하단 고정 팝업(약관동의) -->
+		
+		
+		<!-- Popup : 전체화면 팝업 -->
+		<div id="exam05" class="popup pop_full_sheet">
+			<div class="pop_container">
+				<div class="pop_header">
+					<h2 class="brand pop_tit">임직원 약관동의</h2>
+				</div>
+				<div class="pop_content">
+					<div class="terms_area">
+						<h3 class="tit">[필수] 제휴서비스 제3자 제공 동의</h3>
+						<ul class="terms_list">
+						<li>제공받는 자 : 넷마블 주식회사, 코웨이 주식회사</li>
+						<li>제공받는 목적 : 임직원 확인</li>
+						<li>제공 항목 : 임직원 확인 체크값</li>
+						<li>보유 및 이용기간 : 재직 종료 시</li>
+						</ul>
+					</div>
+				</div>
+				<div class="pop_btn">
+					<button type="button" class="btn primary large btn_purple pop_close">확인</button>
+				</div>
+				<button type="button" class="btn btn_close pop_close">닫기</button>
+			</div>
+		</div>
+		<!-- // Popup : 전체화면 팝업 -->
+		
+		<!-- Popup : 토스트 팝업 -->
+		<div id="exam06" class="popup pop_toast">
+			<div class="pop_container">
+				<div class="pop_content">
+					<p class="pop_message">카카오 간편 로그인 연동이 완료되었어요.</p>
+				</div>
+			</div>
+		</div>
+		<!-- // Popup : 토스트 팝업 -->
+		
 	</div>
 </div>
 </body>
