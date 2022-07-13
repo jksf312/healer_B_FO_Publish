@@ -284,3 +284,15 @@ ul::-webkit-scrollbar-track {
 @media screen and (min-width:600px){
 	html { font-size:32px;}
 }
+
+/* 프로젝트 세팅 */
+
+.sticky{
+	position: sticky !important;
+	bottom: 0;
+}
+body {
+	line-height: inherit !important;
+}
+body,input,select,textarea,button,a {font-family:'Spoqa Han Sans Neo', sans-serif !important;}
+.btn { font-family:'Gmarket Sans', sans-serif !important;}
