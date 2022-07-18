@@ -3,6 +3,7 @@ $(function(){ //ready
 	popup_event();
 	tabs();
 	dropdown();
+	signature();
 });
 
 $(window).resize(function(){
@@ -40,3 +41,18 @@ function dropdown(){
 	});
 		
 };
+
+function signature(){
+	var sign_El = $('.signature_item');
+	if(sign_El.length > 0) {
+		$('.signature_item').jqSignature();
+		$('.signature_item').on('jq.signature.changed', function() {
+			sign_El.find('.placeholder').hide();
+		});
+	}
+	$('.signature_wrap .btn_reset').click(function(){
+		$('.signature_item').jqSignature('clearCanvas');
+		sign_El.find('.placeholder').show();
+	});
+	
+}

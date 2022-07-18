@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalabel=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>ID.IM</title>
+<link href="../../assets/css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../assets/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../assets/js/default.js"></script>
+<script type="text/javascript">
+	document.documentElement.addEventListener('touchstart', function (event) { if (event.touches.length > 1) { event.preventDefault();}}, false);	
+</script>
+</head>
+<body>
+<div id="wrap" class="wrap">
+	<div class="container">
+		<!-- header -->
+		<header class="header">
+			<h1 class="title brand">DNA 분석 신청</h1>
+			<a href="#a" class="btn btn_back">이전으로</a>
+		</header>
+		<!-- // header -->
+	
+		<!-- contents -->
+		<div class="contents">
+			<!-- 하단 이미지 있을 때 have_diag_img -->
+			<div class="diag_area have_diag_img">
+				<div class="diag_step">
+					<h2 class="type_user">신청 <strong>정보와 일치</strong>하는지<br>확인해주세요.</h2>
+					<div class="stepbar" aria-hidden="true">
+						<span class="value" style="width:75%;"></span>
+					</div>
+				</div>
+				<div class="diag_guide_wrap">
+					<dl class="diag_info">
+					<dt>이름</dt>
+					<dd>ㅇㅇㅇ</dd>
+					<dt>휴대폰 번호</dt>
+					<dd>010-1234-1234</dd>
+					<dt>성별</dt>
+					<dd>남</dd>
+					<dt>생년월일</dt>
+					<dd>1999년 11월 11일</dd>
+					<dt>타액 채취 날짜</dt>
+					<dd>2022년 01월 01일</dd>
+					<dt>인종</dt>
+					<dd>동아시아인 한국계</dd>
+					</dl>
+				</div>
+				<img src="../../assets/images/bg/bg_dna02.png" alt="" aria-hidden="true" class="diag_img">
+				
+				<div class="pos_bottom_layer fixed">
+					<button type="button" class="btn primary large btn_purple">다음</button>
+				</div>
+			</div>
+		</div>
+		<!-- // contents -->
+
+	</div>
+</div>
+</body>
+</html>

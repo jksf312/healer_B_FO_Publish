@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalabel=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>ID.IM</title>
+<link href="../../assets/css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../assets/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../assets/js/default.js"></script>
+<script type="text/javascript">
+	document.documentElement.addEventListener('touchstart', function (event) { if (event.touches.length > 1) { event.preventDefault();}}, false);	
+</script>
+</head>
+<body>
+<div id="wrap" class="wrap">
+	<div class="container">
+		<!-- header -->
+		<header class="header">
+			<h1 class="title brand">DNA 분석 신청</h1>
+			<a href="#a" class="btn btn_back">이전으로</a>
+		</header>
+		<!-- // header -->
+	
+		<!-- contents -->
+		<div class="contents">
+			<div class="diag_area">
+				<div class="diag_step">
+					<h2 class="type_basic">홍길동님 <br><span>DNA 분석 신청 선택 약관 동의가 <br>필요해요.</span></h2>
+					<div class="stepbar" aria-hidden="true">
+						<span class="value" style="width:100%;"></span>
+					</div>
+				</div>
+				<div class="diag_guide_wrap">
+					<p class="txt">선택 약관 항목을 동의하지 않는 경우 <br>ID.IM에서 DNA 분석 결과를 제공할 수 없어요.</p>
+					<img src="../../assets/images/bg/bg_dna04.png" alt="" aria-hidden="true" class="diag_img static">
+				</div>
+				
+				<div class="pos_bottom_layer fixed">
+					<button type="button" class="btn primary large btn_purple">약관 동의하</button>
+				</div>
+			</div>
+		</div>
+		<!-- // contents -->
+
+	</div>
+</div>
+</body>
+</html>

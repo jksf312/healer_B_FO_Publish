@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalabel=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>ID.IM</title>
+<link href="../../assets/css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../assets/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../assets/js/default.js"></script>
+<script type="text/javascript">
+	document.documentElement.addEventListener('touchstart', function (event) { if (event.touches.length > 1) { event.preventDefault();}}, false);	
+</script>
+</head>
+<body>
+<div id="wrap" class="wrap">
+	<div class="container">
+		<!-- header -->
+		<header class="header">
+			<h1 class="title brand">DNA 분석 신청</h1>
+			<a href="#a" class="btn btn_back">이전으로</a>
+		</header>
+		<!-- // header -->
+	
+		<!-- contents -->
+		<div class="contents">
+			<!-- 하단 이미지 있을 때 have_diag_img -->
+			<div class="diag_area have_diag_img">
+				<div class="diag_step">
+					<h2 class="type_check">DTC <strong>유전자검사 소개서</strong>를<br>확인해주세요.</h2>
+					<div class="stepbar" aria-hidden="true">
+						<span class="value" style="width:30%;"></span>
+					</div>
+				</div>
+				<div class="diag_guide_wrap">
+					<h3 class="tit">안내</h3>
+					<ul class="diag_guide">
+					<li>유전자검사 동의서 작성 전 반드시 본 유전자검사 소개서의 내용을 충분히 숙지합니다.</li>
+					<li>유전자 검사의 개면 및 목적, 검사 방법, 검체 관리에 관한 사항, 의뢰자의 권리 및 개인정보보호, 동의의 철회에 대한 의미를 확인합니다.</li>
+					</ul>
+				</div>
+				<img src="../../assets/images/bg/bg_dna01.png" alt="" aria-hidden="true" class="diag_img">
+				
+				<div class="pos_bottom_layer fixed">
+					<button type="button" class="btn primary large btn_purple">DTC 유전자 검사 소개</button>
+				</div>
+			</div>
+		</div>
+		<!-- // contents -->
+
+	</div>
+</div>
+</body>
+</html>

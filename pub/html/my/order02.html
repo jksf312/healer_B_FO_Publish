@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalabel=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>ID.IM</title>
+<link href="../../assets/css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../assets/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../assets/js/default.js"></script>
+<script type="text/javascript">
+	document.documentElement.addEventListener('touchstart', function (event) { if (event.touches.length > 1) { event.preventDefault();}}, false);	
+</script>
+</head>
+<body>
+<div id="wrap" class="wrap">
+	<div class="container">
+		<!-- header -->
+		<header class="header">
+			<h1 class="title brand">주문/배송 조회</h1>
+			<a href="#a" class="btn btn_back">이전으로</a>
+		</header>
+		<!-- // header -->
+	
+		<!-- contents -->
+		<div class="contents">
+			<h2 class="hide">주문/배송 조회</h2>
+			<div class="order_wrap">
+				<div class="order_inner">
+					<div class="order_date">
+						<span class="date">22.01.01</span>
+						<a href="#a" class="btn_order_detail">주문 상세보기</a>
+					</div>
+					<ul class="order_list_wrap">
+					<li class="order_list">
+						<div class="order_state">
+							<span class="state">상품 준비중</span>
+						</div>
+						<div class="order_info">
+							<!--
+							<div class="num">1회차</div>
+							-->
+							<div class="thumb"><img src="../../assets/images/bg/bg_order01.png" alt=""></div>
+							<div class="name">클렌징폼</div>
+							<div class="info">
+								<span class="color01">민감형 클렌징폼</span>
+								<span>수량 1개</span>
+							</div>
+							<div class="price">40,000 원</div>
+						</div>
+						<div class="btn_area">
+							<div class="row">
+								<button type="button" class="btn secondary btn_purple">주문취소</button>
+							</div>
+						</div>
+					</li>
+					<li class="order_list">
+						<div class="order_state">
+							<span class="state">상품 준비중</span>
+						</div>
+						<div class="order_info">
+							<div class="num">3회차</div>
+							<div class="sub">함께 구독 상품</div>
+							<div class="thumb"><img src="../../assets/images/bg/bg_order01.png" alt=""></div>
+							<div class="name">토너</div>
+							<div class="info">
+								<span class="color02">약정구독 12회</span>
+								<span>배송주기 4주</span>
+							</div>
+							<div class="price">40,000 원</div>
+						</div>
+						<div class="btn_area">
+							<div class="row">
+								<button type="button" class="btn secondary btn_purple">주문취소</button>
+							</div>
+						</div>
+					</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		<!-- // contents -->
+
+	</div>
+</div>
+</body>
+</html>
