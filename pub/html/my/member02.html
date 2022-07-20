@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalabel=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>ID.IM</title>
+<link href="../../assets/css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../assets/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../assets/js/default.js"></script>
+<script type="text/javascript">
+	document.documentElement.addEventListener('touchstart', function (event) { if (event.touches.length > 1) { event.preventDefault();}}, false);	
+</script>
+</head>
+<body>
+<div id="wrap" class="wrap">
+	<div class="container">
+		<!-- header -->
+		<header class="header">
+			<h1 class="title brand">회원정보 수정</h1>
+			<a href="#a" class="btn btn_back">이전으로</a>
+		</header>
+		<!-- // header -->
+	
+		<!-- contents -->
+		<div class="contents">
+			<h2 class="hide">회원정보 수정</h2>
+			<div class="member_wrap">
+				<div class="member_inner nobd modify">
+					<p class="txt large">이름, 휴대폰 번호는 <br>본인인증 정보로 <br><strong>직접 수정이 불가해요.</strong></p>
+					<div class="basic_ip">
+						<div class="row">
+							<div class="lbl">이메일</div>
+							<input type="email" placeholder="이메일" value="netmarble@netmarble.com">
+						</div>
+						<div class="row">
+							<div class="lbl" style="padding-bottom:0.8rem;"><strong>비밀번호</strong></div>
+							<button type="button" class="btn primary btn_purple">비밀번호변경</button>
+						</div>
+						<div class="row">
+							<div class="lbl">이름</div>
+							<input type="email" placeholder="이름" value="ㅇㅇㅇ" disabled>
+						</div>
+						<div class="row">
+							<div class="lbl">휴대폰 번호</div>
+							<input type="email" placeholder="휴대폰 번호" value="010-1234-1234" disabled>
+						</div>
+						<div class="row">
+							<div class="lbl">생년월일</div>
+							<input type="email" placeholder="생년월일" value="1990년 1월 1일" disabled>
+						</div>
+						<div class="row">
+							<div class="lbl">성별</div>
+							<input type="email" placeholder="성별" value="남" disabled>
+						</div>
+						<div class="row">
+							<div class="lbl"><strong>개인정보 유효기간</strong></div>
+							<div class="radio">
+								<input type="radio" id="rad01_1" name="rad01">
+								<label for="rad01_1">1년</label>
+							</div>
+							<div class="radio">
+								<input type="radio" id="rad01_2" name="rad01">
+								<label for="rad01_2">회원탈퇴 시</label>
+							</div>
+						</div>
+					</div>
+					<button type="button" class="btn primary btn_purple" style="margin-top:0.5rem;" disabled>회원 탈퇴</button>
+					
+				</div>
+				
+				<div class="pos_bottom_layer fixed">
+					<button type="button" class="btn primary large btn_purple">수정하기</button>
+				</div>
+			</div>
+		</div>
+		<!-- // contents -->
+
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalabel=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>ID.IM</title>
+<link href="../../assets/css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../assets/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../assets/js/default.js"></script>
+<script type="text/javascript">
+	document.documentElement.addEventListener('touchstart', function (event) { if (event.touches.length > 1) { event.preventDefault();}}, false);	
+</script>
+</head>
+<body>
+<div id="wrap" class="wrap">
+	<div class="container">
+		<!-- header -->
+		<header class="header">
+			<h1 class="title brand">회원정보 관리</h1>
+			<a href="#a" class="btn btn_back">이전으로</a>
+		</header>
+		<!-- // header -->
+	
+		<!-- contents -->
+		<div class="contents">
+			<h2 class="hide">회원정보 관리</h2>
+			<div class="member_wrap">
+				<div class="member_inner nobd" style="background:#f5f5f5;">
+					<strong class="name">홍길동</strong>
+					<dl class="member_info">
+					<dt>이메일</dt>
+					<dd>ooo@ooo.com</dd>
+					<dt>휴대폰 번호</dt>
+					<dd>010-1234-1234</dd>
+					</dl>
+					<button type="button" class="btn secondary btn_purple">회원정보 수정</button>
+				</div>
+				<div class="member_inner nobd">
+					<h3 class="tit">간편 로그인 관리</h3>
+					<ul class="simple_login_wrap type_switch">
+					<li class="active">
+						<div class="simple_login_item kakao">카카오 로그인 연동</div>
+						<label class="switch">
+							<input type="checkbox">
+							<span class="slider"></span>
+						</label>
+					</li>
+					<li>
+						<div class="simple_login_item naver">네이버 로그인 연동</div>
+						<label class="switch">
+							<input type="checkbox">
+							<span class="slider"></span>
+						</label>
+					</li>
+					<li>
+						<div class="simple_login_item apple">애플 로그인 연동</div>
+						<label class="switch">
+							<input type="checkbox" checked>
+							<span class="slider"></span>
+						</label>
+					</li>
+					<li>
+						<div class="simple_login_item google">구글 로그인 연동</div>
+						<label class="switch">
+							<input type="checkbox">
+							<span class="slider"></span>
+						</label>
+					</li>
+					</ul>
+				</div>
+				<div class="member_inner">
+					<h3 class="tit">
+						마케팅 수신동의
+						<span class="sub">ID.IM의 다양한 혜택과 소식을 알려드릴게요.</span>
+					</h3>
+					<ul class="agree_wrap">
+					<li>
+						<span class="brand">SMS 수신동의</span>
+						<label class="switch">
+							<input type="checkbox">
+							<span class="slider"></span>
+						</label>
+					</li>
+					<li>
+						<span class="brand">이메일 수신동의</span>
+						<label class="switch">
+							<input type="checkbox">
+							<span class="slider"></span>
+						</label>
+					</li>
+					</ul>
+				</div>
+				<div class="member_inner">
+					<a href="#a" class="btn btn_logout">로그아웃</a>
+				</div>
+			</div>
+		</div>
+		<!-- // contents -->
+
+	</div>
+</div>
+</body>
+</html>

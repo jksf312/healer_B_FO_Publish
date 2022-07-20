@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalabel=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>ID.IM</title>
+<link href="../../assets/css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../assets/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../assets/js/default.js"></script>
+<script type="text/javascript">
+	document.documentElement.addEventListener('touchstart', function (event) { if (event.touches.length > 1) { event.preventDefault();}}, false);	
+</script>
+</head>
+<body>
+<div id="wrap" class="wrap">
+	<div class="container">
+		<!-- header -->
+		<header class="header">
+			<h1 class="title brand">회원 탈퇴</h1>
+			<a href="#a" class="btn btn_back">이전으로</a>
+		</header>
+		<!-- // header -->
+	
+		<!-- contents -->
+		<div class="contents">
+			<h2 class="hide">회원 탈퇴</h2>
+			<div class="member_wrap">
+				<div class="member_inner modify">
+					<p class="txt large" style="padding-bottom:1rem;">
+						회원 탈퇴 사유를 <br><strong>선택해주세요.</strong>
+						<span class="sub">복수 선택 가능</span>
+					</p>
+					
+					<ul class="select_wrap">
+					<li>
+						<div class="checkbox">
+							<input type="checkbox" id="chk01_1" checked>
+							<label for="chk01_1">고객서비스(상담, 포장 등) 불만</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox">
+							<input type="checkbox" id="chk01_2">
+							<label for="chk01_2">배송 불만</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox">
+							<input type="checkbox" id="chk01_3">
+							<label for="chk01_3">교환/환불/반품 불만</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox">
+							<input type="checkbox" id="chk01_4">
+							<label for="chk01_4">방문 빈도가 낮음</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox">
+							<input type="checkbox" id="chk01_5">
+							<label for="chk01_5">상품가격 불만</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox">
+							<input type="checkbox" id="chk01_6">
+							<label for="chk01_6">개인정보 유출 우려</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox">
+							<input type="checkbox" id="chk01_7">
+							<label for="chk01_7">ID.IM의 신뢰도 불만</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox">
+							<input type="checkbox" id="chk01_8">
+							<label for="chk01_8">앱 기능(완성도) 불만</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox">
+							<input type="checkbox" id="chk01_9">
+							<label for="chk01_9">기타</label>
+						</div>
+					</li>
+					</ul>
+					
+					<div class="textarea">
+						<textarea placeholder="기타 사유를 작성해주세요." maxlength="5000"></textarea>
+						<div class="word_count"><strong>0</strong> / 5000</div>
+					</div>
+				</div>
+				<div class="pos_bottom_layer">
+					<div class="btn_area">
+						<button type="button" class="btn primary btn_purple" disabled>탈퇴신청</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // contents -->
+
+	</div>
+</div>
+</body>
+</html>

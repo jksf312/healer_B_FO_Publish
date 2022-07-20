@@ -48,6 +48,17 @@
 			</div>
 			<!-- // MY : 주문/배송 팝업 -->
 			
+			<h2>MY : 회원정보관리</h2>
+			<!-- MY : 회원정보관리 팝업 -->
+			<div>
+				<button type="button" class="btn primary small02 btn_black" onclick="$('#exam15').addClass('active');">비밀번호 등록 완료</button>
+				<button type="button" class="btn primary small02 btn_black" onclick="$('#exam16').addClass('active');">로그아웃</button>
+				<button type="button" class="btn primary small02 btn_black" onclick="$('#exam17').addClass('active');">사용할 수 없는 계정 안내</button>
+				<button type="button" class="btn primary small02 btn_black" onclick="$('#exam18').addClass('active');">수신동의 Toast</button>
+			</div>
+			<!-- // MY : 회원정보관리 팝업 -->
+			
+			
 			<h2>진단 : DNA 진단 팝업</h2>
 			<!-- 진단 : DNA 진단 팝업 -->
 			<div>
@@ -522,6 +533,63 @@
 			</div>
 		</div>
 		<!-- // Popup : 민감정보 처리에 대한 동의 -->
+		
+		
+		<!-- Popup : MY 비밀번호 등록 완료 -->
+		<div id="exam15" class="popup pop_alert">
+			<div class="pop_container">
+				<div class="pop_content">
+					<!-- type01 ~ 03 -->
+					<h2 class="pop_tit type01">비밀번호 등록 완료</h2>
+					<p class="pop_message">비밀번호 등록이 완료되었어요.</p>
+				</div>
+				<div class="pop_btn">
+					<button type="button" class="btn primary btn_white pop_close">확인</button>
+				</div>
+			</div>
+		</div>
+		<!-- // Popup : MY 비밀번호 등록 완료 -->
+		
+		<!-- Popup : MY 로그아웃 -->
+		<div id="exam16" class="popup pop_btm_sheet">
+			<div class="pop_container">
+				<div class="pop_content">
+					<h2 class="pop_tit basic">로그아웃 하시겠습니까?</h2>
+					<p class="pop_message basic">로그아웃 시 고객님에게 더 이상 맞춤형<br>컨텐츠 알림을 제공해드릴 수 없어요.</p>
+				</div>
+				<div class="pop_btn">
+					<button type="button" class="btn primary large btn_gray pop_close">닫기</button>
+					<button type="button" class="btn primary large btn_purple">로그아웃</button>
+				</div>
+			</div>
+		</div>
+		<!-- // Popup : MY 로그아웃 -->
+		
+		
+		<!-- Popup : MY 사용할 수 없는 계정 안내 -->
+		<div id="exam17" class="popup pop_btm_sheet">
+			<div class="pop_container">
+				<div class="pop_content">
+					<p class="pop_message type03">사용 할 수 없는<br>간편 로그인 계정이에요.</p>
+				</div>
+				<div class="pop_btn">
+					<button type="button" class="btn primary large btn_purple pop_close">확인</button>
+				</div>
+			</div>
+		</div>
+		<!-- // Popup : MY 사용할 수 없는 계정 안내 -->
+		
+		
+		<!-- Popup : MY 수신동의 Toast -->
+		<div id="exam18" class="popup pop_toast">
+			<div class="pop_container">
+				<div class="pop_content" style="text-align:left;">
+					<div class="date">2022.06.30</div>
+					<p class="pop_message">SMS 수신동의가<br>“수신동의” 로 변경되었습니다.</p>
+				</div>
+			</div>
+		</div>
+		<!-- // Popup : MY 수신동의 Toast -->
 		
 	</div>
 </div>
