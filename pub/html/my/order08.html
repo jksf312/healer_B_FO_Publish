@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalabel=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>ID.IM</title>
+<link href="../../assets/css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../assets/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../assets/js/default.js"></script>
+<script type="text/javascript">
+	document.documentElement.addEventListener('touchstart', function (event) { if (event.touches.length > 1) { event.preventDefault();}}, false);	
+</script>
+</head>
+<body>
+<div id="wrap" class="wrap">
+	<div class="container">
+		<!-- header -->
+		<header class="header">
+			<h1 class="title brand">교환신청</h1>
+			<a href="#a" class="btn btn_back">이전으로</a>
+		</header>
+		<!-- // header -->
+	
+		<!-- contents -->
+		<div class="contents bg_gray">
+			<h2 class="hide">교환신청</h2>
+			<div class="order_wrap">
+				<div class="order_inner exchange">
+					<ul class="order_list_wrap">
+					<li class="order_list">
+						<div class="order_info">
+							<div class="thumb"><img src="../../assets/images/bg/bg_order01.png" alt=""></div>
+							<div class="name">앰플 1종</div>
+							<div class="info">
+								<span class="color02">약정구독 12회</span>
+								<span>배송주기 4주</span>
+							</div>
+							<div class="price_wrap">
+								<span class="num">1회차</span>
+								<div class="price">78,000 원</div>
+							</div>
+						</div>
+					</li>
+					</ul>
+				</div>
+			</div>
+			<div class="exchange_wrap">
+				<div class="exchange_inner">
+					<h3 class="tit">어떤 문제가 있나요?</h3>
+					<ul class="select_wrap">
+					<li>
+						<div class="radio">
+							<input type="radio" id="rad01_1" name="rad01">
+							<label for="rad01_1">상품이 파손됨</label>
+						</div>
+					</li>
+					<li>
+						<div class="radio">
+							<input type="radio" id="rad01_2" name="rad01" checked>
+							<label for="rad01_2">다른 상품이 배송됨</label>
+						</div>
+					</li>
+					</ul>
+				</div>
+				<div class="exchange_inner">
+					<h3 class="tit">교환 상세 사유 입력</h3>
+					<div class="textarea">
+						<textarea placeholder="250자 이내로 작성해주세요."></textarea>
+						<div class="word_count"><strong>0</strong> / 250</div>
+					</div>
+				</div>
+				<div class="pos_bottom_layer">
+					<div class="btn_area">
+						<button type="button" class="btn primary btn_purple">다음</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // contents -->
+
+	</div>
+</div>
+</body>
+</html>
